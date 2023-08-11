@@ -1,9 +1,9 @@
 import './App.css';
 import {Routes,Route} from "react-router-dom"
 import Home from './Pages/Home/Home';
-import EachHabit from './Pages/EachHabit/EachHabit';
-import Archive from './Pages/Archive/Archive';
-import HabitListing from './Pages/HabitListing/HabitListing';
+import Archive from './Pages/Archive/Archive'
+import HabitListing from './Pages/HabitListing/HabitListing'
+import EachHabit from './Pages/EachHabit/EachHabit'
 function App() {
   return (
     <div className="App">
