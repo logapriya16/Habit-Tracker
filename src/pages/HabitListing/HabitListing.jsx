@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import Sidenav from "../../components/sidenav";
+import Sidenav from "../../Components/sidenav";
 import { HabitContext } from "../../Context/HabitContext";
 import { GrAdd } from "react-icons/gr";
 import { useNavigate } from "react-router-dom";

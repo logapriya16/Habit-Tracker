@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Sidenav from "../../components/sidenav";
+import Sidenav from "../../Components/sidenav";
 import { HabitContext } from "../../Context/HabitContext";
 import { BsArchiveFill } from "react-icons/bs";
 export default function Archive() {

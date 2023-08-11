@@ -1,5 +1,5 @@
 import React from "react";
-import Sidenav from "../../components/sidenav";
+import Sidenav from "../../Components/sidenav";
 
 export default function Home() {
   return (

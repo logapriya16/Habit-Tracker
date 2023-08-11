@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import Sidenav from "../../components/sidenav";
+import Sidenav from "../../Components/sidenav";
 import { HabitContext } from "../../Context/HabitContext";
 import { useParams } from "react-router-dom";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
