@@ -4,8 +4,8 @@ export const Habits = [
   {
     id:uuid(),
     name: "Swimming",
-    repeate: "once a day",
-    goal: "participate in Swimming contest",
+    repeate: "daily",
+    goal: "1 times a day",
     time: "morning",
     SDate: "Today",
     archive:false,

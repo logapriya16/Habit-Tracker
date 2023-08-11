@@ -1,13 +1,21 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-export default function SideNav() {
-    const navigate = useNavigate()
+export default function Sidenav() {
   return (
-    <div className='nav-container'>
-      <div className="nav-element" onClick={()=>navigate('/')} >Home</div>
-      <div className="nav-element" onClick={()=>navigate('/habits')}>Habits</div>
-      <div className="nav-element" onClick={()=>navigate('/archive')}>Archive</div>
+    <div>
+        
+      <ul type="none">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/habits">Habits</Link>
+        </li>
+        <li>
+          <Link to="/archive">Archive</Link>
+        </li>
+      </ul>
     </div>
   )
 }

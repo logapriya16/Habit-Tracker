@@ -1,26 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import SideNav from "./Components/SideNav";
-import LandingPage from "./pages/landingPage/LandingPage";
-import HabitListing from "./pages/HabitListing/HabitListing";
-import EachHabitPage from "./pages/EachHabit/EachHabitPage";
-import ArchivePage from "./pages/ArchivePage/ArchivePage";
-
+import './App.css';
+import {Routes,Route} from "react-router-dom"
+import Home from './Pages/Home/Home';
+import EachHabit from './Pages/EachHabit/EachHabit';
+import Archive from './Pages/Archive/Archive';
+import HabitListing from './Pages/HabitListing/HabitListing';
 function App() {
   return (
     <div className="App">
-      <div style={{ display: "flex" }}>
-        <SideNav />
-      </div>
-
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/habits" element={<HabitListing/>} />
-        <Route path="/habits/:habitID" element={<EachHabitPage/>} />
-        <Route path="/archive" element={<ArchivePage/>} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/eachhabit/:habitId' element={<EachHabit/>}/>
+        <Route path='/archive' element={<Archive/>}/>
+        <Route path='/habits' element={<HabitListing/>}/>
       </Routes>
     </div>
   );
 }
-
 export default App;
